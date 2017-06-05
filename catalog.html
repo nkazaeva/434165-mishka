@@ -6,69 +6,74 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__logo">
-      <a href="index.html"><img src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»"></a>
-    </div>
-
-    <nav class="main-nav">
-      <span class="main-nav__toggle"><span></span</span>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="search.html">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="basket.html">Корзина: пока пуста</a></li>
-        </ul>
+    <div class="container">
+      <div class="page-header__logo">
+        <a href="index.html"><img src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»"></a>
       </div>
-    </nav>
+
+      <nav class="main-nav">
+        <span class="main-nav__toggle"><span></span</span>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a href="search.html">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a href="basket.html">Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main>
     <h1 class="page-title">Каталог товаров</h1>
+    <div class="container">
+      <section class="catalog">
+        <article class="catalog__item">
+          <div class="catalog__item-image"><a href="#"><img src="http://placehold.it/260x195" width="260" height="195"></a></div>
+          <div class="catalog__item-title"><a href="#">Зайчик-попрыгайчик</a></div>
+          <div class="catalog__item-features">Рост 30 см, вес 200 г</div>
+          <div class="catalog__item-price">1 200 руб.</div>
+        </article>
+        <article class="catalog__item">
+          <div class="catalog__item-image"><a href="#"><img src="http://placehold.it/260x195" width="260" height="195"></a></div>
+          <div class="catalog__item-title"><a href="#">Корзинка для белья</a></div>
+          <div class="catalog__item-features">Диаметр 15 см, высота 10 см</div>
+          <div class="catalog__item-price">690 руб.</div>
+        </article>
+        <article class="catalog__item">
+          <div class="catalog__item-image"><a href="#"><img src="http://placehold.it/260x195" width="260" height="195" class="catalog__item-image"></a></div>
+          <div class="catalog__item-title"><a href="#">Большая корзинка для игрушек</a></div>
+          <div class="catalog__item-features">Диаметр 30 см, высота 30 см</div>
+          <div class="catalog__item-price">1 500 руб.</div>
+        </article>
+      </section>
 
-    <section class="catalog">
-      <article class="catalog__item">
-        <div class="catalog__item-image"><a href="#"><img src="http://placehold.it/260x195" width="260" height="195"></a></div>
-        <div class="catalog__item-title"><a href="#">Зайчик-попрыгайчик</a></div>
-        <div class="catalog__item-features">Рост 30 см, вес 200 г</div>
-        <div class="catalog__item-price">1 200 руб.</div>
-      </article>
-      <article class="catalog__item">
-        <div class="catalog__item-image"><a href="#"><img src="http://placehold.it/260x195" width="260" height="195"></a></div>
-        <div class="catalog__item-title"><a href="#">Корзинка для белья</a></div>
-        <div class="catalog__item-features">Диаметр 15 см, высота 10 см</div>
-        <div class="catalog__item-price">690 руб.</div>
-      </article>
-      <article class="catalog__item">
-        <div class="catalog__item-image"><a href="#"><img src="http://placehold.it/260x195" width="260" height="195" class="catalog__item-image"></a></div>
-        <div class="catalog__item-title"><a href="#">Большая корзинка для игрушек</a></div>
-        <div class="catalog__item-features">Диаметр 30 см, высота 30 см</div>
-        <div class="catalog__item-price">1 500 руб.</div>
-      </article>
-    </section>
-
-    <section class="production">
-      <h2 class="production__title">Процесс производства</h2>
-      <div class="production__video">
-        <iframe width="260" height="auto" src="https://www.youtube.com/embed/s4MgnqIyTb0?list=PL0S6y2B3B2yxIKMjWofUwCPwXn4GOaeZB" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-      появляются наши товары.</div>
-      <a href="form.html" class="production__order button">Сделать заказ</a>
-    </section>
+      <section class="production">
+        <h2 class="production__title">Процесс производства</h2>
+        <div class="production__video">
+          <iframe width="260" height="auto" src="https://www.youtube.com/embed/s4MgnqIyTb0?list=PL0S6y2B3B2yxIKMjWofUwCPwXn4GOaeZB" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+        появляются наши товары.</div>
+        <a href="form.html" class="production__order button">Сделать заказ</a>
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__social">
-      <div class="social-links">
-        <a href="https://www.instagram.com" target="_blank" class="socail-link social-link--instagram">Instagram</a>
-        <a href="https://www.facebook.com" target="_blank" class="socail-link social-link--facebook">Facebook</a>
-        <a href="https://www.twitter.com" target="_blank" class="socail-link social-link--twitter">Twitter</a>
+    <div class="container">
+      <div class="page-footer__social">
+        <div class="social-links">
+          <a href="https://www.instagram.com" target="_blank" class="socail-link social-link--instagram">Instagram</a>
+          <a href="https://www.facebook.com" target="_blank" class="socail-link social-link--facebook">Facebook</a>
+          <a href="https://www.twitter.com" target="_blank" class="socail-link social-link--twitter">Twitter</a>
+        </div>
       </div>
-    </div>
-    <div class="page-footer__copyright">
-      Разработано
-      <a href="https://htmlacademy.ru" target="_blank" class="page-footer__copyright-link"><img src="http://placehold.it/27x35" width="27" height="35" alt="HTML Academy"></a>
+      <div class="page-footer__copyright">
+        Разработано
+        <a href="https://htmlacademy.ru" target="_blank" class="page-footer__copyright-link"><img src="http://placehold.it/27x35" width="27" height="35" alt="HTML Academy"></a>
+      </div>
     </div>
   </footer>
 </body>
