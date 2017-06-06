@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__logo">
+        <a href="index.html"><img src="http://placehold.it/86x35" width="86" height="35" alt="Магазин «Мишка»"></a>
+      </div>
+
+      <nav class="main-nav">
+        <span class="main-nav__toggle"><span></span</span>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a href="search.html">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a href="basket.html">Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="page-title">Вязание на заказ</h1>
+    <div class="container">
+      <div class="page-introduction">
+        Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </div>
+
+      <form class="order-form" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="form-block">
+          <legend class="form-block__title">Тип</legend>
+          <div class="form-field">
+            <input class="form-field__radio" type="radio" name="type" id="type-interior" value="Аксессуары для интерьера" checked>
+            <label class="form-field__label" for="type-interior">Аксессуары для интерьера</label>
+          </div>
+          <div class="form-field">
+            <input class="form-field__radio" type="radio" name="type" value="Детская игрушка" id="type-toy">
+            <label class="form-field__label" for="type-toy">Детская игрушка</label>
+          </div>
+       </fieldset>
+
+        <fieldset class="form-block">
+          <legend class="form-block__title">Цвет</legend>
+          <div class="form-field">
+            <input class="form-field__checkbox" type="checkbox" name="color" id="color-white" value="Белый" checked>
+            <label class="form-field__label" for="color-white">Белый</label>
+          </div>
+          <div class="form-field">
+            <input class="form-field__checkbox" type="checkbox" name="color" id="color-grey" value="Серый" checked>
+            <label class="form-field__label" for="color-grey">Серый</label>
+          </div>
+          <div class="form-field">
+            <input class="form-field__checkbox" type="checkbox" name="color" id="color-tiffany" value="«Тиффани»">
+            <label class="form-field__label" for="color-tiffany">«Тиффани»</label>
+          </div>
+          <div class="form-field">
+            <input class="form-field__checkbox" type="checkbox" name="color" id="color-black" value="Черный">
+            <label class="form-field__label" for="color-black">Черный</label>
+          </div>
+          <div class="form-field">
+            <input class="form-field__checkbox" type="checkbox" name="color" id="color-pink" value="Розовый">
+            <label class="form-field__label" for="color-pink">Розовый</label>
+          </div>
+          <div class="form-field">
+            <input class="form-field__checkbox" type="checkbox" name="color" id="color-orange" value="Оранжевый">
+            <label class="form-field__label" for="color-orange">Оранжевый</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-block">
+          <legend class="from-block__title">Фио</legend>
+          <div class="form-field">
+            <label class="from-field__label" for="name">Имя:</label><br>
+            <input class="form-field__text" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+          </div>
+          <div class="form-field">
+            <label class="from-field__label" for="surname">Фамилия:</label><br>
+            <input class="form-field__text" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+          </div>
+          <div class="form-field">
+            <label class="from-field__label" for="patronymic">Отчество:</label><br>
+            <input class="form-field__text" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+          </div>
+        </fieldset>
+
+        <fieldset class="form-block">
+          <legend class="from-block__title">Тел</legend>
+          <div class="form-field">
+            <input class="form-field__text" type="tel" pattern="\+7\s?[0-9]{3}\s?[0-9]{2}\s?[0-9]{2}" name="phone" id="phone" placeholder="+7 XXX XX XX*" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-block">
+          <legend class="from-block__title">E-mail</legend>
+          <div class="form-field">
+            <input class="form-field__text" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="email" id="email" placeholder="Ваш Email*" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-block">
+          <legend class="from-block__title">Доп</legend>
+          <div class="form-field">
+            <textarea class="form-field__textarea" rows="5" name="message" id="message" placeholder="Опишите все ваши пожелания к заказу">
+            </textarea>
+          </div>
+        </fieldset>
+
+        <div class="form-note">*Поля обязательны для заполнения</div>
+
+        <input class="form-button button" type="submit" value="Отправить заказ">
+      </form>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__social">
+        <div class="social-links">
+          <a href="https://www.instagram.com" target="_blank" class="socail-link social-link--instagram">Instagram</a>
+          <a href="https://www.facebook.com" target="_blank" class="socail-link social-link--facebook">Facebook</a>
+          <a href="https://www.twitter.com" target="_blank" class="socail-link social-link--twitter">Twitter</a>
+        </div>
+      </div>
+      <div class="page-footer__copyright">
+        Разработано
+        <a href="https://htmlacademy.ru" target="_blank" class="page-footer__copyright-link"><img src="http://placehold.it/27x35" width="27" height="35" alt="HTML Academy"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
