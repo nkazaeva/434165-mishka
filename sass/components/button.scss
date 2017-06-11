@@ -1,0 +1,21 @@
+.button {
+  display: block;
+  padding: 20px;
+  font-size: $font-main--big;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background: white;
+  border: 2px solid $gray--darken;
+
+  &:hover {
+    color: white;
+    background: $gray--darken;
+  }
+
+  &:active {
+    color: #7c7c7c;
+    background: $gray--darken;
+  }
+}

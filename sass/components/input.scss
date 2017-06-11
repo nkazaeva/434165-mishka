@@ -1,0 +1,18 @@
+.form-field__text {
+  width: 100%;
+  height: 50px;
+  font-family: 'Open Sans';
+  font-size: $font-main--big;
+  vertical-align: middle;
+  color: $gray--darken;
+  border: none;
+  border-bottom: 2px solid black;
+
+  &::placeholder {
+    color: $gray--light;
+  }
+
+  &:hover, &:active, &:focus {
+    border-bottom: 2px solid $color-main;
+  }
+}

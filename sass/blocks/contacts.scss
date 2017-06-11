@@ -1,0 +1,32 @@
+.contacts {
+
+  &__title {
+    color: black;
+  }
+
+  &__info {
+    margin: 40px 0;
+  }
+
+  &__info td:not(:first-of-type) {
+    padding-left: 30px;
+  }
+
+  &__info-email {
+    border-bottom: 1px solid $color-main;
+  }
+
+  &__info-email:hover {
+    color: #46c1ae;
+    border-bottom: 1px solid #46c1ae;
+  }
+
+  &__info-email:active {
+    color: #d6f1ed;
+    border-bottom: 1px solid #d6f1ed;
+  }
+
+  &__write {
+    margin: 40px 0;
+  }
+}
