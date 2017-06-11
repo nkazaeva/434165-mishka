@@ -1,0 +1,22 @@
+.about {
+  margin-bottom: 30px;
+
+  &__title {
+    margin-bottom: 30px;
+    color: black;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__item-image {
+    margin-bottom: 30px;
+  }
+
+  &__item-title {
+    font-size: $font-main--big;
+    font-weight: 700;
+    color: black;
+  }
+}

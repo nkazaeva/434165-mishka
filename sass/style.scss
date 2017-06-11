@@ -1,1 +1,24 @@
-body { background: lightblue; }
+@import "base/font";
+@import "base/variable";
+@import "base/global";
+
+@import "blocks/page-footer";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/promo-header";
+@import "blocks/best-week";
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/contacts";
+@import "blocks/page-title";
+@import "blocks/form";
+@import "blocks/catalog";
+@import "blocks/production";
+
+@import "components/button";
+@import "components/table";
+@import "components/radio";
+@import "components/checkbox";
+@import "components/input";
+@import "components/label";
+@import "components/textarea";

@@ -1,0 +1,37 @@
+.best-week {
+  padding-bottom: 30px;
+
+  &__title {
+    color: black;
+  }
+
+  &__subtitle {
+    font-size: $font-main--big;
+    font-weight: 700;
+    color: $color-main;
+  }
+}
+
+.product {
+  margin: 30px 0;
+
+  &__features {
+    margin: 30px 0;
+  }
+
+  &__features tr {
+    border-bottom: 1px solid $gray--lighten;
+  }
+
+  &__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__price {
+    margin: 30px 0;
+    font-size: $font-main--big;
+    font-weight: 700;
+    text-align: center;
+  }
+}

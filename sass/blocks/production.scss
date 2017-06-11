@@ -1,0 +1,22 @@
+.production {
+  margin-bottom: 60px;
+
+  &__title {
+    margin: 30px;
+    font-size: $font-main--big;
+    font-weight: 700;
+  }
+
+  &__video {
+    width: 100%;
+  }
+
+  &__description {
+    margin: 30px;
+    font-size: $font-main--tiny;
+  }
+
+  &__order {
+    margin: 30px;
+  }
+}

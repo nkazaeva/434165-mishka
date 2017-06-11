@@ -1,0 +1,32 @@
+.order-form {
+  margin: 30px 0;
+}
+
+.form-block {
+  margin: 0;
+  padding: 10px 0;
+  border: none;
+  border-top: 1px solid $color-main;
+}
+
+.form-block__title {
+  padding-right: 20px;
+  font-size: $font-main--big;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-main;
+}
+
+.form-field {
+  margin: 20px 0;
+}
+
+.form-note {
+  margin-bottom: 20px;
+  font-size: $font-main--small;
+}
+
+.form-button {
+  width: 100%;
+  margin: 30px 0 50px 0;
+}
