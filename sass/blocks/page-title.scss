@@ -1,9 +1,80 @@
 .page-title {
-  height: 175px;
-  margin-bottom: 30px;
-  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: $gray--lightest;
 }
-.page-introduction {
-  font-size: $font-main--tiny;
+
+@media #{$mobile-widths-only} {
+  .page-title {
+    height: 175px;
+    margin-bottom: 30px;
+  }
+
+  .page-introduction {
+    font-size: 13px;
+  }
+}
+
+@media #{$tablet-widths} {
+  .page-title {
+    height: 225px;
+    margin-top: -60px;
+    margin-bottom: 80px;
+    border-top: 1px solid $gray--lighten;
+
+    &::before {
+       content: "";
+       position: absolute;
+       left: 0;
+       bottom: 0;
+       right: 0;
+       height: 10px;
+       background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 12px);
+       background-repeat: repeat;
+       background-size: 20px 20px;
+     }
+
+    &::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 15px;
+      background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 12px);
+      background-repeat: repeat;
+      background-size: 40px 20px;
+    }
+  }
+
+  .page-introduction {
+    font-size: 17px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .page-title {
+    height: 255px;
+    margin-bottom: 130px;
+
+    &::before {
+      height: 15px;
+      background-image: radial-gradient(circle at 15px -5px, transparent 18px, white 18px);
+      background-repeat: repeat;
+      background-size: 30px 30px;
+    }
+
+    &::after {
+      height: 20px;
+      background-image: radial-gradient(circle at 15px 20px, white 18px, transparent 18px);
+      background-repeat: repeat;
+      background-size: 60px 30px;
+    }
+  }
+
+  .page-introduction {
+    padding: 0 175px;
+  }
 }

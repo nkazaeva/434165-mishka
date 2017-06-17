@@ -1,13 +1,22 @@
-.about {
+.about-wrap {
   margin-bottom: 30px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   &__title {
+    flex-basis: 100%;
     margin-bottom: 30px;
     color: black;
   }
 
   &__item {
     margin-bottom: 30px;
+    box-sizing: border-box;
   }
 
   &__item-image {
@@ -15,8 +24,49 @@
   }
 
   &__item-title {
-    font-size: $font-main--big;
     font-weight: 700;
     color: black;
+  }
+}
+
+@media #{$mobile-widths-only} {
+  .about {
+    &__title {
+      font-size: 25px;
+    }
+
+    &__item {
+      flex-basis: 100%;
+    }
+
+    &__item-title {
+      font-size: 17px;
+    }
+  }
+}
+
+@media #{$tablet-widths} {
+  .about {
+    &__title {
+      font-size: 43px;
+    }
+
+    &__item {
+      flex-basis: 40%;
+    }
+
+    &__item-title {
+      font-size: 20px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .about {
+    padding: 0 175px;
+
+    &__title {
+      font-size: 53px;
+    }
   }
 }

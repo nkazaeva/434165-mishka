@@ -1,4 +1,10 @@
-.page-header {
-  padding: 20px 0;
-  border-bottom: 1px solid $gray--lighten;
+@media #{$mobile-widths-only} {
+  .page-header {
+    border-bottom: 1px solid $gray--lighten;
+  }
+
+  .page-header .container {
+    padding: 0;
+  }
 }
+
