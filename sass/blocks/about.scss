@@ -1,7 +1,3 @@
-.about-wrap {
-  margin-bottom: 30px;
-}
-
 .about {
   display: flex;
   flex-direction: row;
@@ -20,7 +16,7 @@
   }
 
   &__item-image {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   &__item-title {
@@ -31,6 +27,10 @@
 
 @media #{$mobile-widths-only} {
   .about {
+    &-wrap {
+      margin-bottom: 30px;
+    }
+
     &__title {
       font-size: 25px;
     }
@@ -47,6 +47,10 @@
 
 @media #{$tablet-widths} {
   .about {
+    &-wrap {
+      margin-bottom: 50px;
+    }
+
     &__title {
       font-size: 43px;
     }

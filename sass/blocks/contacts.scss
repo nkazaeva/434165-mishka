@@ -1,31 +1,153 @@
 .contacts {
+  display: flex;
+
   &__title {
     color: black;
   }
 
-  &__info {
-    margin: 40px 0;
-  }
-
-  &__info td:not(:first-of-type) {
-    padding-left: 30px;
-  }
-
-  &__info-email {
+  &__item--email {
     border-bottom: 1px solid $color-main;
   }
 
-  &__info-email:hover {
+  &__item--email:hover {
     color: #46c1ae;
     border-bottom: 1px solid #46c1ae;
   }
 
-  &__info-email:active {
+  &__item--email:active {
     color: #d6f1ed;
     border-bottom: 1px solid #d6f1ed;
   }
 
-  &__write {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__item-title {
+    flex-basis: 80px;
+    flex-shrink: 0;
+  }
+
+  &__map {
+    position: relative;
+    text-align: center;
+  }
+
+  &__map::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 66px;
+    height: 101px;
+    margin-left: -33px;
+    margin-top: -50px;
+    background: url("/img/icon-map-pin.svg") no-repeat;
+  }
+}
+
+@media #{$mobile-widths-only} {
+  .contacts {
+    flex-direction: column;
     margin: 40px 0;
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__map .container{
+      padding: 0;
+    }
+
+    &__title,
+    &__item,
+    &__map{
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media #{$tablet-widths} {
+  .contacts {
+    flex-direction: column;
+    margin: 50px 0 60px 0;
+
+    &__title {
+      font-size: 43px;
+      height: 80px;
+      background: url('/img/icon-flag.svg') no-repeat 100% 50%;
+    }
+
+    &__list {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__item {
+      flex-basis: 40%;
+    }
+
+    &__map .container{
+      padding: 0;
+    }
+
+    &__write {
+      align-self: center;
+    }
+
+    &__title,
+    &__item,
+    &__map{
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .contacts {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1050px;
+    margin: 70px auto 0 auto;
+
+    &__info {
+      flex-basis: 350px;
+      box-sizing: border-box;
+    }
+
+    &__info .container {
+      padding: 0;
+    }
+
+    &__title {
+      font-size: 53px;
+      padding-left: 175px;
+      background-position: 87px 50%;
+    }
+
+    &__list {
+      flex-direction: column;
+      padding-left: 175px;
+    }
+
+    &__map .container{
+      padding: 0;
+    }
+
+    &__write {
+      margin-top: -200px;
+      padding-left: 175px;
+    }
   }
 }

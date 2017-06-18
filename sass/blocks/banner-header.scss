@@ -1,3 +1,7 @@
+.banner-header-wrap {
+  position: relative;
+}
+
 .banner-header {
   display: flex;
   flex-direction: column;
@@ -17,8 +21,9 @@
   &__item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    height: 100px;
+    height: 120px;
     padding: 0 30px;
     font-weight: 700;
     color: white;
@@ -27,33 +32,49 @@
   }
 
   &__item--interior {
-    background: #63d1bb;
+    background-color: #63d1bb;
   }
 
   &__item--interior:hover {
     color: white;
-    height: 105px;
-    background: #59d5bc;
+    height: 125px;
+    background-color: #59d5bc;
+  }
+
+  &__item--interior:hover svg {
+    opacity: 0.7;
   }
 
   &__item--interior:active {
     color: #8be2d0;
-    background: #59d5bc;
+    background-color: #59d5bc;
+  }
+
+  &__item--interior:active svg {
+    opacity: 0.3;
   }
 
   &__item--toy {
-    background: #56c3b2;
+    background-color: #56c3b2;
   }
 
   &__item--toy:hover {
-    height: 105px;
+    height: 125px;
     color: white;
-    background: #46c1ae;
+    background-color: #46c1ae;
+  }
+
+  &__item--toy:hover svg {
+    opacity: 0.7;
   }
 
   &__item--toy:active {
     color: #7ed4c6;
-    background: #46c1ae;
+    background-color: #46c1ae;
+  }
+
+  &__item--toy:active svg {
+    opacity: 0.3;
   }
 }
 
@@ -91,6 +112,30 @@
     margin-top: -60px;
     border-top: 1px solid $gray--lighten;
     background: url('/img/hero-mobile@1x.jpg') no-repeat 50% 100% #f9f9f9;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 10px;
+      background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 12px);
+      background-repeat: repeat;
+      background-size: 20px 20px;
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 15px;
+      background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 12px);
+      background-repeat: repeat;
+      background-size: 40px 20px;
+    }
   }
 
   .banner-header {
@@ -116,6 +161,20 @@
 @media #{$desktop-widths} {
   .banner-header-wrap {
     margin-bottom: 70px;
+
+    &::before {
+      height: 15px;
+      background-image: radial-gradient(circle at 15px -5px, transparent 18px, white 18px);
+      background-repeat: repeat;
+      background-size: 30px 30px;
+    }
+
+    &::after {
+      height: 20px;
+      background-image: radial-gradient(circle at 15px 20px, white 18px, transparent 18px);
+      background-repeat: repeat;
+      background-size: 60px 30px;
+    }
   }
 
   .banner-header__title {
