@@ -1,5 +1,16 @@
 .form-field__label {
-  font-size: $font-main--big;
   font-weight: 700;
   color: black;
+}
+
+@media #{$mobile-widths-only} {
+  .form-field__label {
+    font-size: 17px;
+  }
+}
+
+@media #{$tablet-widths} {
+  .form-field__label {
+    font-size: 19px;
+  }
 }

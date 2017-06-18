@@ -1,22 +1,127 @@
 .production {
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $gray--lighten;
 
-  &__title {
-    margin: 30px;
-    font-size: $font-main--big;
-    font-weight: 700;
+  &:hover {
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
   }
 
   &__video {
-    width: 100%;
+    position: relative;
+  }
+
+  &__video-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 102px;
+    height: auto;
+    margin-left: -51px;
+    margin-top: -34px;
+    cursor: pointer;
+  }
+
+  &__video-play:hover svg {
+    width: 120%;
+
+  }
+
+  &__video-play:active svg {
+    width: 80%;
+    opacity: 0.7;
+  }
+
+  &__title {
+    margin: 30px;
+    padding-left: 50px;
+    font-weight: 700;
+    background: url('/img/icon-video.svg') no-repeat 0% 50%;
   }
 
   &__description {
     margin: 30px;
-    font-size: $font-main--tiny;
   }
 
   &__order {
-    margin: 30px;
+    margin: 0 30px 30px 30px;
+  }
+}
+
+@media #{$mobile-widths-only} {
+  .production {
+    margin-bottom: 60px;
+
+    &__video {
+      order: 2;
+      text-align: center;
+    }
+
+    &__title {
+      order: 1;
+      font-size: 17px;
+    }
+
+    &__description {
+      order: 3;
+      font-size: 13px;
+    }
+
+    &__order {
+      order: 4;
+    }
+  }
+}
+
+@media #{$tablet-widths} {
+  .production {
+    margin-bottom: 60px;
+
+    &__video {
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__description {
+      font-size: 15px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .production {
+    display: block;
+    height: 455px;
+    margin-bottom: 100px;
+
+    &__video {
+      float: left;
+      width: 682px;
+      height: 455px;
+    }
+
+    &__title {
+      float: left;
+      width: 215px;
+      padding: 40px 0 0 0;
+      background-position: 0% 0%;
+    }
+
+    &__description {
+      float: left;
+      width: 215px;
+    }
+
+    &__order {
+      float: left;
+      margin: 30px;
+    }
   }
 }

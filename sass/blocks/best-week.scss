@@ -1,37 +1,207 @@
+.best-week-wrap {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-position: top left;
+    background-repeat: repeat-x;
+  }
+}
+
 .best-week {
   padding-bottom: 30px;
 
   &__title {
+    display: flex;
+  }
+
+  &__title-main {
     color: black;
   }
 
-  &__subtitle {
-    font-size: $font-main--big;
+  &__title-sub {
+    font-size: 17px;
     font-weight: 700;
     color: $color-main;
+    text-transform: uppercase;
   }
 }
 
 .product {
-  margin: 30px 0;
+  display: flex;
 
-  &__features {
-    margin: 30px 0;
-  }
-
-  &__features tr {
+  &__description-features tr {
     border-bottom: 1px solid $gray--lighten;
   }
 
-  &__image img {
-    width: 100%;
-    height: auto;
-  }
-
-  &__price {
-    margin: 30px 0;
-    font-size: $font-main--big;
+  &__order-price {
     font-weight: 700;
     text-align: center;
   }
 }
+
+@media #{$mobile-widths-only} {
+  .best-week {
+    &-wrap {
+      margin-bottom: 35px;
+    }
+
+    &-wrap::before {
+      height: 6px;
+      bottom: 0;
+      background: linear-gradient(-150deg, $gray--lightest 3px, transparent 0) 0 3px, linear-gradient( 150deg, $gray--lightest 3px, transparent 0) 0 3px;
+      background-size: 10px 10px;
+    }
+
+    &-wrap::after {
+      height: 6px;
+      bottom: 2px;
+      background: linear-gradient(-150deg, white 3px, transparent 0) 0 3px, linear-gradient( 150deg, white 3px, transparent 0) 0 3px;
+      background-size: 10px 10px;
+    }
+
+    &__title {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    &__title-main {
+      font-size: 25px;
+    }
+  }
+  .product {
+    flex-direction: column;
+
+    &__description-text,
+    &__description-features,
+    &__image,
+    &__order-price,
+    &__order-button {
+      margin-bottom: 30px;
+    }
+
+    &__image {
+      text-align: center;
+    }
+
+    &__order-price {
+      font-size: 17px;
+    }
+  }
+}
+
+@media #{$tablet-widths} {
+  .best-week {
+    &-wrap {
+      margin-bottom: 50px;
+    }
+
+    &-wrap::before {
+      height: 16px;
+      bottom: 0;
+      background: linear-gradient(-150deg, $gray--lightest 8px, transparent 0) 0 8px, linear-gradient( 150deg, $gray--lightest 8px, transparent 0) 0 8px;
+      background-size: 20px 20px;
+    }
+
+    &-wrap::after {
+      height: 16px;
+      bottom: 6px;
+      background: linear-gradient(-150deg, white 8px, transparent 0) 0 8px, linear-gradient( 150deg, white 8px, transparent 0) 0 8px;
+      background-size: 20px 20px;
+    }
+
+    &__title {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 55px;
+    }
+
+    &__title-main {
+      font-size: 43px;
+    }
+
+    &__title-sub {
+      flex-basis: 100px;
+      text-align: center;
+    }
+  }
+
+  .product {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__description{
+      margin-right: 50px;
+    }
+
+    &__description,
+    &__description-text {
+      margin-bottom: 55px;
+    }
+
+    &__order {
+      margin: -130px 378px 45px 0;
+    }
+
+    &__order-price {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .best-week {
+    &-wrap::before {
+      height: 22px;
+      bottom: 0;
+      background: linear-gradient(-150deg, $gray--lightest 11px, transparent 0) 0 11px, linear-gradient( 150deg, $gray--lightest 11px, transparent 0) 0 11px;
+      background-size: 30px 30px;
+    }
+
+    &-wrap::after {
+      height: 22px;
+      bottom: 6px;
+      background: linear-gradient(-150deg, white 11px, transparent 0) 0 11px, linear-gradient( 150deg, white 11px, transparent 0) 0 11px;
+      background-size: 30px 30px;
+    }
+
+    &__title {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+
+    &__title-main {
+      font-size: 53px;
+      z-index: 5;
+    }
+
+    &__title-sub {
+      flex-basis: 175px;
+      padding: 0 40px;
+      box-sizing: border-box;
+    }
+  }
+
+  .product {
+    justify-content: flex-end;
+    align-items: center;
+    margin: -135px 0 0 175px;
+
+    &__image {
+      height: 636px;
+    }
+
+    &__order {
+      margin: -130px 570px 45px 175px;
+    }
+  }
+}
+

@@ -1,8 +1,26 @@
 .reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 30px;
-  padding-bottom: 30px;
+
+  &-wrap {
+    position: relative;
+  }
+
+  &-wrap::before,
+  &-wrap::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-position: top left;
+    background-repeat: repeat-x;
+  }
 
   &__title {
+    font-weight: 700;
     color: black;
   }
 
@@ -16,7 +34,7 @@
   }
 
   &__item-author {
-    font-size: $font-main--big;
+    font-size: 17px;
     font-style: normal;
   }
 
@@ -25,10 +43,154 @@
   }
 
   &__arrow {
-    width: 100%;
-    height: 50px;
-    margin-bottom: 40px;
-    text-align: center;
-    border: 1px solid $gray--lighten;
+    display: flex;
+    align-items: center;
+  }
+
+  &__arrow-prev,
+  &__arrow-next {
+    width: 50px;
+    height: 26px;
+    font-size: 0;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__arrow-prev {
+    margin-right: 35px;
+    background: url('/img/icon-left-arrow.svg') no-repeat 0% 0%;
+  }
+
+  &__arrow-next {
+    background: url('/img/icon-right-arrow.svg') no-repeat 0% 0%;
+  }
+
+  &__arrow-prev:hover,
+  &__arrow-next:hover {
+    opacity: 0.6;
+  }
+
+  &__arrow-prev:active,
+  &__arrow-next:active {
+    opacity: 0.3;
+  }
+}
+
+@media #{$mobile-widths-only} {
+  .reviews {
+    padding-bottom: 30px;
+
+    &-wrap {
+      margin-bottom: 35px;
+    }
+
+    &-wrap::before {
+      height: 6px;
+      bottom: 0;
+      background: linear-gradient(-150deg, $gray--lightest 3px, transparent 0) 0 3px, linear-gradient( 150deg, $gray--lightest 3px, transparent 0) 0 3px;
+      background-size: 10px 10px;
+    }
+
+    &-wrap::after {
+      height: 6px;
+      bottom: 2px;
+      background: linear-gradient(-150deg, white 3px, transparent 0) 0 3px, linear-gradient( 150deg, white 3px, transparent 0) 0 3px;
+      background-size: 10px 10px;
+    }
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__arrow {
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+      margin-bottom: 40px;
+      border: 1px solid $gray--lighten;
+    }
+  }
+}
+
+@media #{$tablet-widths} {
+  .reviews {
+    min-height: 457px;
+    padding-left: 50px;
+    padding-bottom: 60px;
+    background: url('/img/review@1x.jpg') no-repeat 0% 0%;
+
+    &-wrap {
+      margin-bottom: 50px;
+    }
+
+    &-wrap::before {
+      height: 16px;
+      bottom: 0;
+      background: linear-gradient(-150deg, $gray--lightest 8px, transparent 0) 0 8px, linear-gradient( 150deg, $gray--lightest 8px, transparent 0) 0 8px;
+      background-size: 20px 20px;
+    }
+
+    &-wrap::after {
+      height: 16px;
+      bottom: 6px;
+      background: linear-gradient(-150deg, white 8px, transparent 0) 0 8px, linear-gradient( 150deg, white 8px, transparent 0) 0 8px;
+      background-size: 20px 20px;
+    }
+
+    &-wrap .container {
+      padding-left: 0;
+    }
+
+    &__title {
+      font-size: 43px;
+      order: 1;
+    }
+
+    &__slider {
+      order: 3;
+    }
+
+    &__arrow {
+      justify-content: flex-end;
+      margin-top: -60px;
+    }
+
+    &__write {
+      align-self: flex-end;
+      order: 2;
+      margin-top: -60px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .reviews {
+    padding-left: 175px;
+
+    &-wrap::before {
+      height: 22px;
+      bottom: 0;
+      background: linear-gradient(-150deg, $gray--lightest 11px, transparent 0) 0 11px, linear-gradient( 150deg, $gray--lightest 11px, transparent 0) 0 11px;
+      background-size: 30px 30px;
+    }
+
+    &-wrap::after {
+      height: 22px;
+      bottom: 6px;
+      background: linear-gradient(-150deg, white 11px, transparent 0) 0 11px, linear-gradient( 150deg, white 11px, transparent 0) 0 11px;
+      background-size: 30px 30px;
+    }
+
+    &-wrap .container {
+      padding-left: 50px;
+    }
+
+    &__title {
+      font-size: 53px;
+    }
+
+    &__write {
+      margin-top: -70px;
+    }
   }
 }

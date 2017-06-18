@@ -1,35 +1,67 @@
 .form-field__checkbox {
   display: none;
+
   & ~ .form-field__label {
     cursor: pointer;
     vertical-align: middle;
   }
+
   & ~ .form-field__label::before {
     content: '';
     display: inline-block;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
-    margin-right: 24px;
     vertical-align: middle;
     text-align: center;
-    color: $color-main;
+    color: #231f20;
     box-shadow: 0 0 0 2px $gray--darken;
+    box-sizing: border-box;
   }
+
   & ~ .form-field__label:hover::before {
     box-shadow: 0 0 0 2px $color-main;
   }
+
   & ~ .form-field__label:active::before {
     box-shadow: 0 0 0 2px $gray--light;
   }
+
   &:checked + .form-field__label::before {
     content: '\2714';
     box-shadow: 0 0 0 2px $gray--darken;
   }
+
   &:checked + .form-field__label:hover::before {
     box-shadow: 0 0 0 2px $color-main;
   }
+
   &:checked + .form-field__label:active::before {
     box-shadow: 0 0 0 2px $gray--light;
+  }
+}
+
+
+@media #{$mobile-widths-only} {
+  .form-field__checkbox ~ .form-field__label::before {
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+  }
+
+  .form-field__checkbox:checked + .form-field__label::before {
+    font-size: 25px;
+    font-weight: normal;
+  }
+}
+
+@media #{$tablet-widths} {
+  .form-field__checkbox ~ .form-field__label::before {
+    width: 52px;
+    height: 52px;
+    margin-right: 30px;
+  }
+
+  .form-field__checkbox:checked + .form-field__label::before {
+    font-size: 30px;
+    font-weight: normal;
   }
 }
