@@ -6,7 +6,6 @@
 
   &__title {
     flex-basis: 100%;
-    margin-bottom: 30px;
     color: black;
   }
 
@@ -28,10 +27,11 @@
 @media #{$mobile-widths-only} {
   .about {
     &-wrap {
-      margin-bottom: 30px;
+      margin-bottom: 15px;
     }
 
     &__title {
+      margin-bottom: 30px;
       font-size: 25px;
     }
 
@@ -52,11 +52,14 @@
     }
 
     &__title {
+      margin-bottom: 50px;
       font-size: 43px;
     }
 
     &__item {
-      flex-basis: 40%;
+      flex-basis: 45%;
+      margin: 0 15px 40px 0;
+      box-sizing: border-box;
     }
 
     &__item-title {
