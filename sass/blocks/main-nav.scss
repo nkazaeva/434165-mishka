@@ -38,47 +38,35 @@
   }
 
   &__item--search {
-    background-image: url('/img/icon-search.svg');
+    border-left: 1px solid $gray--lighten;
+    border-right: 1px solid $gray--lighten;
   }
 
-  &__item--search:hover {
-    background-image: url('/img/icon-search-color.svg');
+  &__item--search  svg {
+    vertical-align: middle;
   }
 
-  &__item--search:active {
-    position: relative;
-    background-image: url('/img/icon-search-color.svg');
+  &__item--search:hover path {
+    fill: #63d1bb;
   }
 
-  &__item--search:active::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    opacity: 0.7;
+  &__item--search:active path {
+    fill: #63d1bb;
+    opacity: 0.3;
   }
 
-  &__item--basket {
-    background-image: url('/img/icon-cart.svg');
+  &__item--basket  svg {
+    padding-right: 30px;
+    vertical-align: middle;
   }
 
-  &__item--basket:hover {
-    background-image: url('/img/icon-cart-color.svg');
+  &__item--basket:hover path {
+    fill: #63d1bb;
   }
 
-  &__item--basket:active {
-    background-image: url('/img/icon-cart-color.svg');
-  }
-
-  &__item--basket:active::before {
-    content: "";
-    width: 20%;
-    height: 100%;
-    background: white;
-    opacity: 0.7;
+  &__item--basket:active path {
+    fill: #63d1bb;
+    opacity: 0.3;
   }
 }
 
@@ -190,14 +178,14 @@
       box-sizing: border-box;
     }
 
-    &__item--search {
-      background-position: 5% 50%;
-      background-repeat: no-repeat;
+    &__item--search  svg {
+      margin-left: -45px;
+      padding-right: 25px;
     }
 
-    &__item--basket {
-      background-position: 5% 50%;
-      background-repeat: no-repeat;
+    &__item--basket  svg {
+      margin-left: -45px;
+      padding-right: 25px;
     }
   }
 }
@@ -251,7 +239,6 @@
       align-items: center;
       flex-grow: 1;
       padding: 0 10px;
-      height: 100%;
       box-sizing: border-box;
     }
 
@@ -264,20 +251,13 @@
       text-align: right;
     }
 
-    &__item--search {
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      border-left: 1px solid $gray--lighten;
-      border-right: 1px solid $gray--lighten;
+
+    &__item--search a {
+      text-align: center;
     }
 
     &__item--search span {
      font-size: 0;
-    }
-
-    &__item--basket {
-      background-position: 10% 50%;
-      background-repeat: no-repeat;
     }
   }
 }

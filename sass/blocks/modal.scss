@@ -1,0 +1,135 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  &__container {
+    position: fixed;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 336px;
+    margin-top: -168px;
+    background: white;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0px 5px 10px 0px rgba(0, 1, 1, 0.25);
+    box-sizing: border-box;
+  }
+
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__size {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__size-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    font-size: 17px;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: 2px solid $gray--lighten;
+  }
+
+  &__size-item:hover {
+    color: $gray--darken;
+    border: 2px solid $gray--light;
+  }
+
+  &__size-item:active {
+    color: $gray--darken;
+    border: 2px solid $color-main;
+  }
+
+  &__button {
+    height: 52px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    background: #63d1bb;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__button:hover {
+    background: #59d5bc;
+  }
+
+  &__button:active {
+    color: #8be2d0;
+    background: #59d5bc;
+  }
+}
+
+@media #{$mobile-widths-only} {
+  .modal {
+    &__container {
+      width: 100%;
+      padding: 40px 30px 50px 30px;
+    }
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__size-item {
+      width: 82px;
+      text-align: center;
+    }
+  }
+}
+
+@media #{$tablet-widths} {
+  .modal {
+    &__container {
+      left: 50%;
+      margin-left: -283px;
+      padding: 45px 110px;
+      width: 566px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__size-item {
+      width: 112px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .modal {
+    &__container {
+
+    }
+  }
+}
