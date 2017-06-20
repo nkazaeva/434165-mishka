@@ -208,3 +208,10 @@
     }
   }
 }
+
+@media (min-width: 768px) and (min-resolution: 144dpi),
+(min-width: 768px) and (min-resolution: 1.5dppx) {
+  .reviews {
+    background: url('/img/review@2x.jpg') no-repeat 50% 0% #f9f9f9;
+  }
+}

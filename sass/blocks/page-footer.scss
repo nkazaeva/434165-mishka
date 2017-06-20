@@ -6,11 +6,15 @@
   display: flex;
   justify-content: space-between;
 
-  &__logo:hover path {
+  &__logo use.logo-footer {
+    fill: #231f20;
+  }
+
+  &__logo:hover use.logo-footer {
     fill: $color-main--dark;
   }
 
-  &__logo:active path {
+  &__logo:active use.logo-footer {
     fill: $color-main--dark;
     opacity: 0.3;
   }
@@ -26,11 +30,15 @@
     align-items: center;
   }
 
-  &__copyright-link:hover path {
+  &__copyright-link use.logo-htmlacademy {
+    fill: #63d1bb;
+  }
+
+  &__copyright-link:hover use.logo-htmlacademy {
     fill: $color-main--dark;
   }
 
-  &__copyright-link:active path {
+  &__copyright-link:active use.logo-htmlacademy {
     fill: $color-main--dark;
     opacity: 0.3;
   }

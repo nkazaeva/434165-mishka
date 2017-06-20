@@ -6,11 +6,15 @@
 .social-link {
   margin: 0 20px;
 
-  &:hover path {
+  & use.icon-social {
+    fill: #221f1f;
+  }
+
+  &:hover use.icon-social {
     fill: $color-main--dark;
   }
 
-  &:active path {
+  &:active use.icon-social {
     fill: $color-main--dark;
     opacity: 0.3;
   }

@@ -18,6 +18,10 @@
     margin-bottom: 15px;
   }
 
+  &__item-image use.icon-feature {
+    fill: #63d1bb;
+  }
+
   &__item-title {
     font-weight: 700;
     color: black;

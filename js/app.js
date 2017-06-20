@@ -25,4 +25,7 @@
     document.querySelector('.modal').classList.remove('modal--opened');
     document.querySelector('.modal').classList.add('modal--closed');
   });
+
+  //Подключаем полифил picture для ИЕ
+  document.createElement( "picture" );
 })();
