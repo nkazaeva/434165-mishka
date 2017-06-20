@@ -27,7 +27,7 @@
   }
 
   &__item-title {
-    margin: 30px 30px 20px 30px;
+    margin: 15px 30px 10px 30px;
     font-weight: 700;
   }
 
@@ -35,7 +35,6 @@
     flex-grow: 1;
     margin: 0 30px;
     padding-bottom: 30px;
-
   }
 
   &__item-price {
@@ -43,7 +42,6 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 30px;
-    padding: 20px 0 30px 0;
     font-weight: 700;
     border-top: 1px solid $gray--lighten;
   }
@@ -72,11 +70,17 @@
     }
 
     &__item-title {
+      margin: 30px 30px 15px 30px;
       font-size: 17px;
     }
 
     &__item-features {
+      padding-bottom: 20px;
       font-size: 13px;
+    }
+
+    &__item-price {
+      padding: 20px 0 30px 0;
     }
   }
 }
@@ -95,11 +99,17 @@
     }
 
     &__item-title {
+      margin: 20px 30px 10px 30px;
       font-size: 20px;
     }
 
     &__item-features {
+      padding-bottom: 10px;
       font-size: 15px;
+    }
+
+    &__item-price {
+      padding: 30px 0;
     }
   }
 }
@@ -115,6 +125,10 @@
 
     &__item-image {
       height: 462px;
+    }
+
+    &__item-price {
+      padding: 20px 0 30px 0;
     }
   }
 }

@@ -14,8 +14,6 @@
 }
 
 .best-week {
-  padding-bottom: 30px;
-
   &__title {
     display: flex;
   }
@@ -47,22 +45,24 @@
 
 @media #{$mobile-widths-only} {
   .best-week {
+    padding-bottom: 20px;
+
     &-wrap {
-      margin-bottom: 35px;
+      margin-bottom: 20px;
     }
 
     &-wrap::before {
-      height: 6px;
+      height: 10px;
       bottom: 0;
-      background: linear-gradient(-150deg, $gray--lightest 3px, transparent 0) 0 3px, linear-gradient( 150deg, $gray--lightest 3px, transparent 0) 0 3px;
-      background-size: 10px 10px;
+      background: linear-gradient(-150deg, $gray--lightest 5px, transparent 0) 0 5px, linear-gradient( 150deg, $gray--lightest 5px, transparent 0) 0 5px;
+      background-size: 15px 15px;
     }
 
     &-wrap::after {
-      height: 6px;
-      bottom: 2px;
-      background: linear-gradient(-150deg, white 3px, transparent 0) 0 3px, linear-gradient( 150deg, white 3px, transparent 0) 0 3px;
-      background-size: 10px 10px;
+      height: 10px;
+      bottom: 4px;
+      background: linear-gradient(-150deg, white 5px, transparent 0) 0 5px, linear-gradient( 150deg, white 5px, transparent 0) 0 5px;
+      background-size: 15px 15px;
     }
 
     &__title {
@@ -80,9 +80,8 @@
     &__description-text,
     &__description-features,
     &__image,
-    &__order-price,
     &__order-button {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     &__image {
@@ -90,6 +89,7 @@
     }
 
     &__order-price {
+      margin-bottom: 30px;
       font-size: 17px;
     }
   }
@@ -97,29 +97,31 @@
 
 @media #{$tablet-widths} {
   .best-week {
+    padding-bottom: 30px;
+
     &-wrap {
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
 
     &-wrap::before {
-      height: 16px;
+      height: 24px;
       bottom: 0;
-      background: linear-gradient(-150deg, $gray--lightest 8px, transparent 0) 0 8px, linear-gradient( 150deg, $gray--lightest 8px, transparent 0) 0 8px;
-      background-size: 20px 20px;
+      background: linear-gradient(-150deg, $gray--lightest 12px, transparent 0) 0 12px, linear-gradient( 150deg, $gray--lightest 12px, transparent 0) 0 12px;
+      background-size: 30px 30px;
     }
 
     &-wrap::after {
-      height: 16px;
-      bottom: 6px;
-      background: linear-gradient(-150deg, white 8px, transparent 0) 0 8px, linear-gradient( 150deg, white 8px, transparent 0) 0 8px;
-      background-size: 20px 20px;
+      height: 24px;
+      bottom: 8px;
+      background: linear-gradient(-150deg, white 12px, transparent 0) 0 12px, linear-gradient( 150deg, white 12px, transparent 0) 0 12px;
+      background-size: 30px 30px;
     }
 
     &__title {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 55px;
+      margin-bottom: 50px;
     }
 
     &__title-main {
@@ -143,7 +145,7 @@
 
     &__description,
     &__description-text {
-      margin-bottom: 55px;
+      margin-bottom: 30px;
     }
 
     &__order {
@@ -152,30 +154,35 @@
 
     &__order-price {
       font-size: 20px;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
   }
 }
 
 @media #{$desktop-widths} {
   .best-week {
+    &-wrap {
+      margin-bottom: 50px;
+    }
+
     &-wrap::before {
-      height: 22px;
+      height: 42px;
       bottom: 0;
-      background: linear-gradient(-150deg, $gray--lightest 11px, transparent 0) 0 11px, linear-gradient( 150deg, $gray--lightest 11px, transparent 0) 0 11px;
-      background-size: 30px 30px;
+      background: linear-gradient(-150deg, $gray--lightest 21px, transparent 0) 0 21px, linear-gradient( 150deg, $gray--lightest 21px, transparent 0) 0 21px;
+      background-size: 50px 50px;
     }
 
     &-wrap::after {
-      height: 22px;
-      bottom: 6px;
-      background: linear-gradient(-150deg, white 11px, transparent 0) 0 11px, linear-gradient( 150deg, white 11px, transparent 0) 0 11px;
-      background-size: 30px 30px;
+      height: 42px;
+      bottom: 10px;
+      background: linear-gradient(-150deg, white 21px, transparent 0) 0 21px, linear-gradient( 150deg, white 21px, transparent 0) 0 21px;
+      background-size: 50px 50px;
     }
 
     &__title {
       flex-direction: row-reverse;
       justify-content: flex-end;
+      margin: 120px 0 55px 0;
     }
 
     &__title-main {
@@ -193,15 +200,23 @@
   .product {
     justify-content: flex-end;
     align-items: center;
-    margin: -135px 0 0 175px;
+    margin: -175px 0 0 175px;
+
+    &__description,
+    &__description-text {
+      margin-bottom: 55px;
+    }
 
     &__image {
       height: 636px;
     }
 
     &__order {
-      margin: -130px 570px 45px 175px;
+      margin: -115px 570px 60px 175px;
+    }
+
+    &__order-price {
+      margin-bottom: 30px;
     }
   }
 }
-

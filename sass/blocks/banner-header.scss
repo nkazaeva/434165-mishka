@@ -37,7 +37,6 @@
 
   &__item--interior:hover {
     color: white;
-    height: 125px;
     background-color: #59d5bc;
   }
 
@@ -59,7 +58,6 @@
   }
 
   &__item--toy:hover {
-    height: 125px;
     color: white;
     background-color: #46c1ae;
   }
@@ -80,7 +78,7 @@
 
 @media #{$mobile-widths-only} {
   .banner-header-wrap {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     background: url('/img/hero-mobile@1x.jpg') no-repeat 50% 0% #f9f9f9;
   }
 
@@ -92,7 +90,7 @@
     height: 490px;
 
     &__title {
-      margin-top: 70px;
+      margin: 70px 30px 0 30px;
       font-size: 27px;
     }
 
@@ -101,15 +99,23 @@
     }
 
     &__item {
+      height: 105px;
       font-size: 19px;
+    }
+
+    &__item--interior:hover {
+      height: 110px;
+    }
+
+    &__item--toy:hover {
+      height: 110px;
     }
   }
 }
 
 @media #{$tablet-widths} {
   .banner-header-wrap {
-    margin-bottom: 50px;
-    margin-top: -60px;
+    margin: -60px 0 40px 0;
     border-top: 1px solid $gray--lighten;
     background: url('/img/hero-mobile@1x.jpg') no-repeat 50% 100% #f9f9f9;
 
@@ -142,7 +148,7 @@
     height: 745px;
 
     &__title {
-      margin-top: 160px;
+      margin-top: 150px;
       font-size: 43px;
     }
 
@@ -153,7 +159,16 @@
     }
 
     &__item {
+      height: 120px;
       font-size: 20px;
+    }
+
+    &__item--interior:hover {
+      height: 125px;
+    }
+
+    &__item--toy:hover {
+      height: 125px;
     }
   }
 }
@@ -181,4 +196,3 @@
     font-size: 53px;
   }
 }
-
