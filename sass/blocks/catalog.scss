@@ -46,11 +46,15 @@
     border-top: 1px solid $gray--lighten;
   }
 
-  &__item-price:hover path {
+  &__item-price use.icon-cart {
+    fill: #d3d2d2;
+  }
+
+  &__item-price:hover use.icon-cart {
     fill: #63d1bb;
   }
 
-  &__item-price:active path {
+  &__item-price:active use.icon-cart {
     fill: #63d1bb;
     opacity: 0.3;
   }

@@ -26,13 +26,18 @@
     cursor: pointer;
   }
 
+  &__video-play use.icon-play {
+    fill: #63d1bb;
+  }
+
   &__video-play:hover svg {
     width: 120%;
-
+    height: auto;
   }
 
   &__video-play:active svg {
     width: 80%;
+    height: auto;
     opacity: 0.7;
   }
 
