@@ -31,6 +31,10 @@
     transition: all 0.5s ease;
   }
 
+  &__item-text {
+    flex-basis: 150px;
+  }
+
   &__item--interior {
     background-color: #63d1bb;
   }
@@ -99,6 +103,7 @@
 
     &__title {
       margin: 70px 30px 0 30px;
+      padding: 0 30px;
       font-size: 27px;
     }
 
@@ -157,6 +162,7 @@
 
     &__title {
       margin-top: 150px;
+      padding: 0 70px;
       font-size: 43px;
     }
 
@@ -201,6 +207,7 @@
   }
 
   .banner-header__title {
+    padding: 0 150px;
     font-size: 53px;
   }
 }

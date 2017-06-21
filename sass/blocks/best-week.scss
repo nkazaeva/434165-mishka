@@ -45,24 +45,12 @@
 
 @media #{$mobile-widths-only} {
   .best-week {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 
     &-wrap {
       margin-bottom: 20px;
-    }
-
-    &-wrap::before {
-      height: 10px;
-      bottom: 0;
-      background: linear-gradient(-150deg, $gray--lightest 5px, transparent 0) 0 5px, linear-gradient( 150deg, $gray--lightest 5px, transparent 0) 0 5px;
-      background-size: 15px 15px;
-    }
-
-    &-wrap::after {
-      height: 10px;
-      bottom: 4px;
-      background: linear-gradient(-150deg, white 5px, transparent 0) 0 5px, linear-gradient( 150deg, white 5px, transparent 0) 0 5px;
-      background-size: 15px 15px;
+      border-image: url('/img/bg-zigzag-line.svg') 25 0 repeat;
+      border-bottom: 7px solid transparent;
     }
 
     &__title {
@@ -97,24 +85,12 @@
 
 @media #{$tablet-widths} {
   .best-week {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 
     &-wrap {
       margin-bottom: 40px;
-    }
-
-    &-wrap::before {
-      height: 24px;
-      bottom: 0;
-      background: linear-gradient(-150deg, $gray--lightest 12px, transparent 0) 0 12px, linear-gradient( 150deg, $gray--lightest 12px, transparent 0) 0 12px;
-      background-size: 30px 30px;
-    }
-
-    &-wrap::after {
-      height: 24px;
-      bottom: 8px;
-      background: linear-gradient(-150deg, white 12px, transparent 0) 0 12px, linear-gradient( 150deg, white 12px, transparent 0) 0 12px;
-      background-size: 30px 30px;
+      border-image: url('/img/bg-zigzag-line.svg') 25 0 repeat;
+      border-bottom: 15px solid transparent;
     }
 
     &__title {
@@ -163,20 +139,8 @@
   .best-week {
     &-wrap {
       margin-bottom: 50px;
-    }
-
-    &-wrap::before {
-      height: 42px;
-      bottom: 0;
-      background: linear-gradient(-150deg, $gray--lightest 21px, transparent 0) 0 21px, linear-gradient( 150deg, $gray--lightest 21px, transparent 0) 0 21px;
-      background-size: 50px 50px;
-    }
-
-    &-wrap::after {
-      height: 42px;
-      bottom: 10px;
-      background: linear-gradient(-150deg, white 21px, transparent 0) 0 21px, linear-gradient( 150deg, white 21px, transparent 0) 0 21px;
-      background-size: 50px 50px;
+      border-image: url('/img/bg-zigzag-line.svg') 25 0 repeat;
+      border-bottom: 20px solid transparent;
     }
 
     &__title {
