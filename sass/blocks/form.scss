@@ -18,7 +18,6 @@
 
 .form-field {
   display: flex;
-  margin: 10px 0;
 }
 
 .form-control {
@@ -34,7 +33,8 @@
     flex-direction: column;
 
     &__title {
-      margin: 25px 0;
+      margin: 20px 0;
+      line-height: 16px;
     }
 
     &__title::after {
@@ -57,14 +57,11 @@
 
   .form-field {
     flex-direction: column;
+    margin: 12px 0;
 
     &__text--phone,
     &__text--email {
-      margin-top: -35px;
-    }
-
-    &__textarea {
-      margin-top: -25px;
+      margin-top: -30px;
     }
   }
 
@@ -74,7 +71,7 @@
     &__note {
       order: 1;
       font-size: 14px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     &__button {
@@ -116,13 +113,15 @@
 
   .form-field {
     flex-direction: row;
+    margin: 10px 0;
 
     &--radio {
       flex-basis: 100%;
     }
 
     &--checkbox {
-      flex-basis: 50%;
+      flex-basis: 45%;
+      margin-right: 10px;
     }
 
     &--input {
@@ -155,6 +154,10 @@
     margin-bottom: 45px;
   }
 
+  .form-block-wrap {
+    padding: 45px 0 42px 0;
+  }
+
   .form-block__title {
     flex-basis: 175px;
     text-align: center;
@@ -162,11 +165,16 @@
 
   .form-block__content {
     padding-right: 175px;
+
+    &--checkbox {
+      padding-right: 155px;
+    }
   }
 
   .form-field {
     &--checkbox {
-      flex-basis: 220px;
+      flex-basis: 195px;
+      margin-right: 0;
     }
   }
 

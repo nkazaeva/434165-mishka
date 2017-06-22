@@ -9,11 +9,12 @@
 @media #{$mobile-widths-only} {
   .page-title {
     height: 175px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .page-introduction {
     font-size: 13px;
+    line-height: 24px;
   }
 }
 
@@ -21,7 +22,7 @@
   .page-title {
     height: 225px;
     margin-top: -60px;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
     border-top: 1px solid $gray--lighten;
 
     &::before {
@@ -52,13 +53,14 @@
 
   .page-introduction {
     font-size: 17px;
+    line-height: 30px;
   }
 }
 
 @media #{$desktop-widths} {
   .page-title {
     height: 255px;
-    margin-bottom: 130px;
+    margin-bottom: 120px;
 
     &::before {
       height: 15px;

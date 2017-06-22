@@ -1,4 +1,6 @@
 .form-field__label {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   color: black;
 }
@@ -6,11 +8,13 @@
 @media #{$mobile-widths-only} {
   .form-field__label {
     font-size: 17px;
+    line-height: 18px;
   }
 }
 
 @media #{$tablet-widths} {
   .form-field__label {
     font-size: 19px;
+    line-height: 18px;
   }
 }
