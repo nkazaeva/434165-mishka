@@ -54,11 +54,11 @@
 
   &__arrow-prev {
     margin-right: 35px;
-    background: url('/img/icon-left-arrow.svg') no-repeat 0% 0%;
+    background: url('../img/icon-left-arrow.svg') no-repeat 0% 0%;
   }
 
   &__arrow-next {
-    background: url('/img/icon-right-arrow.svg') no-repeat 0% 0%;
+    background: url('../img/icon-right-arrow.svg') no-repeat 0% 0%;
   }
 
   &__arrow-prev:hover,
@@ -74,24 +74,12 @@
 
 @media #{$mobile-widths-only} {
   .reviews {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 
     &-wrap {
       margin-bottom: 35px;
-    }
-
-    &-wrap::before {
-      height: 10px;
-      bottom: 0;
-      background: linear-gradient(-150deg, $gray--lightest 5px, transparent 0) 0 5px, linear-gradient( 150deg, $gray--lightest 5px, transparent 0) 0 5px;
-      background-size: 15px 15px;
-    }
-
-    &-wrap::after {
-      height: 10px;
-      bottom: 4px;
-      background: linear-gradient(-150deg, white 5px, transparent 0) 0 5px, linear-gradient( 150deg, white 5px, transparent 0) 0 5px;
-      background-size: 15px 15px;
+      border-image: url('/img/bg-zigzag-line.svg') 25 0 repeat;
+      border-bottom: 7px solid transparent;
     }
 
     &__title {
@@ -117,25 +105,13 @@
   .reviews {
     min-height: 457px;
     padding-left: 50px;
-    padding-bottom: 90px;
-    background: url('/img/review@1x.jpg') no-repeat 0% 0%;
+    padding-bottom: 45px;
+    background: url('../img/review@1x.jpg') no-repeat 0% 0%;
 
     &-wrap {
       margin-bottom: 50px;
-    }
-
-    &-wrap::before {
-      height: 16px;
-      bottom: 0;
-      background: linear-gradient(-150deg, $gray--lightest 8px, transparent 0) 0 8px, linear-gradient( 150deg, $gray--lightest 8px, transparent 0) 0 8px;
-      background-size: 20px 20px;
-    }
-
-    &-wrap::after {
-      height: 16px;
-      bottom: 6px;
-      background: linear-gradient(-150deg, white 8px, transparent 0) 0 8px, linear-gradient( 150deg, white 8px, transparent 0) 0 8px;
-      background-size: 20px 20px;
+      border-image: url('/img/bg-zigzag-line.svg') 25 0 repeat;
+      border-bottom: 15px solid transparent;
     }
 
     &-wrap .container {
@@ -174,20 +150,8 @@
 
     &-wrap {
       margin-bottom: 80px;
-    }
-
-    &-wrap::before {
-      height: 42px;
-      bottom: 0;
-      background: linear-gradient(-150deg, $gray--lightest 21px, transparent 0) 0 21px, linear-gradient( 150deg, $gray--lightest 21px, transparent 0) 0 21px;
-      background-size: 50px 50px;
-    }
-
-    &-wrap::after {
-      height: 42px;
-      bottom: 10px;
-      background: linear-gradient(-150deg, white 21px, transparent 0) 0 21px, linear-gradient( 150deg, white 21px, transparent 0) 0 21px;
-      background-size: 50px 50px;
+      border-image: url('../img/bg-zigzag-line.svg') 25 0 repeat;
+      border-bottom: 20px solid transparent;
     }
 
     &-wrap .container {
@@ -212,6 +176,6 @@
 @media (min-width: 768px) and (min-resolution: 144dpi),
 (min-width: 768px) and (min-resolution: 1.5dppx) {
   .reviews {
-    background: url('/img/review@2x.jpg') no-repeat 50% 0% #f9f9f9;
+    background: url('../img/review@2x.jpg') no-repeat 50% 0% #f9f9f9;
   }
 }

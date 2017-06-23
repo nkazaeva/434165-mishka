@@ -26,7 +26,7 @@
   }
 
   &:checked + .form-field__label::before {
-    content: '\2714';
+    background: url('../img/icon-tick.svg') no-repeat 50% 50%;
     box-shadow: 0 0 0 2px $gray--darken;
   }
 

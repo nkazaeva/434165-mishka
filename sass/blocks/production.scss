@@ -43,9 +43,8 @@
 
   &__title {
     margin: 30px;
-    padding-left: 50px;
     font-weight: 700;
-    background: url('/img/icon-video.svg') no-repeat 0% 50%;
+    background: url('../img/icon-video.svg') no-repeat 0% 50%;
   }
 
   &__description {
@@ -53,7 +52,7 @@
   }
 
   &__order {
-    margin: 0 30px 30px 30px;
+    margin: 15px 30px 30px 30px;
   }
 }
 
@@ -68,16 +67,21 @@
 
     &__title {
       order: 1;
+      margin: 20px 30px;
+      padding-left: 50px;
       font-size: 17px;
+      line-height: 24px;
     }
 
     &__description {
       order: 3;
       font-size: 13px;
+      line-height: 24px;
     }
 
     &__order {
       order: 4;
+      padding: 15px 30px;
     }
   }
 }
@@ -91,13 +95,15 @@
     }
 
     &__title {
-      margin: 40px 0 10px 40px;
+      margin: 30px 0 10px 40px;
+      padding-left: 60px;
       font-size: 20px;
     }
 
     &__description {
-      margin: 30px 0 40px 30px;
+      margin: 30px 0 30px 40px;
       font-size: 15px;
+      line-height: 30px;
     }
 
     &__order {
@@ -114,14 +120,13 @@
 
     &__video {
       float: left;
-      width: 682px;
-      height: 455px;
+      margin-right: 70px;
     }
 
     &__title {
       float: left;
       width: 215px;
-      margin-top: 40px;
+      margin: 55px 0 10px 0;
       padding: 40px 0 0 0;
       background-position: 0% 0%;
     }
@@ -129,11 +134,15 @@
     &__description {
       float: left;
       width: 215px;
+      margin: 20px 0 20px 0;
+    }
+
+    &__order {
+      margin: 0 30px 45px 0;
     }
 
     &__order {
       float: left;
-      margin: 30px;
     }
   }
 }
