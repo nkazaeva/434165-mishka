@@ -5,17 +5,17 @@
 }
 .social-link {
   margin: 0 20px;
+}
 
-  & use.icon-social {
-    fill: #221f1f;
-  }
+.social-link use.icon-social {
+  fill: #221f1f;
+}
 
-  &:hover use.icon-social {
-    fill: $color-main--dark;
-  }
+.social-link:hover use.icon-social {
+  fill: $color-main--dark;
+}
 
-  &:active use.icon-social {
-    fill: $color-main--dark;
-    opacity: 0.3;
-  }
+.social-link:active use.icon-social {
+  fill: $color-main--dark;
+  opacity: 0.3;
 }

@@ -1,36 +1,38 @@
 .form-field__text {
   width: 100%;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   vertical-align: middle;
   color: $gray--darken;
   border: none;
   border-bottom: 2px solid black;
 
-  &::placeholder {
-    color: $gray--light;
-  }
-
-  &:hover, &:active, &:focus {
-    border-bottom: 2px solid $color-main;
-  }
-
   &--phone {
     background: url("../img/icon-phone.svg") no-repeat 100% 50%;
-  }
-
-  &--phone:hover,
-  &--phone:active {
-    background: url("../img/icon-phone-color.svg") no-repeat 100% 50%;
   }
 
   &--email {
     background: url("../img/icon-mail.svg") no-repeat 100% 50%;
   }
 
-  &--email:hover,
-  &--email:active{
-    background: url("../img/icon-mail-color.svg") no-repeat 100% 50%;
+  &:hover,
+  &:active,
+  &:focus {
+    border-bottom: 2px solid $color-main;
   }
+
+  &::placeholder {
+    color: $gray--light;
+  }
+}
+
+.form-field__text--phone:hover,
+.form-field__text--phone:active {
+  background: url("../img/icon-phone-color.svg") no-repeat 100% 50%;
+}
+
+.form-field__text--email:hover,
+.form-field__text--email:active{
+  background: url("../img/icon-mail-color.svg") no-repeat 100% 50%;
 }
 
 @media #{$mobile-widths-only} {

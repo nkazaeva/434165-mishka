@@ -1,19 +1,19 @@
 .form-block {
   display: flex;
+}
 
-  &__title {
-    flex-shrink: 0;
-    font-size: 17px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $color-main;
-    overflow: hidden;
-  }
+.form-block__title {
+  flex-shrink: 0;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-main;
+  overflow: hidden;
+}
 
-  &__content {
-    display: flex;
-    justify-content: space-between;
-  }
+.form-block__content {
+  display: flex;
+  justify-content: space-between;
 }
 
 .form-field {
@@ -31,13 +31,13 @@
 
   .form-block {
     flex-direction: column;
+  }
 
-    &__title {
-      margin: 20px 0;
-      line-height: 16px;
-    }
+  .form-block__title {
+    margin: 20px 0;
+    line-height: 16px;
 
-    &__title::after {
+    &::after {
       content: "";
       display: inline-block;
       width: 100%;
@@ -49,35 +49,35 @@
       vertical-align: middle;
       box-sizing: border-box;
     }
+  }
 
-    &__content {
-      flex-direction: column;
-    }
+  .form-block__content {
+    flex-direction: column;
   }
 
   .form-field {
     flex-direction: column;
     margin: 12px 0;
+  }
 
-    &__text--phone,
-    &__text--email {
-      margin-top: -30px;
-    }
+  .form-field__text--phone,
+  .form-field__text--email {
+    margin-top: -30px;
   }
 
   .form-control {
     flex-direction: column;
+  }
 
-    &__note {
-      order: 1;
-      font-size: 14px;
-      margin-bottom: 30px;
-    }
+  .form-control__note {
+    order: 1;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
 
-    &__button {
-      order: 2;
-      flex-basis: 100%;
-    }
+  .form-control__button {
+    order: 2;
+    flex-basis: 100%;
   }
 }
 
@@ -88,27 +88,27 @@
 
   .form-block-wrap {
     padding: 45px 0;
-  }
 
-  .form-block-wrap--gray {
-    background: $gray--lightest;
+    &--gray {
+      background: $gray--lightest;
+    }
   }
 
   .form-block {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+  }
 
-    &__title {
-      flex-basis: 165px;
-      margin-top: 20px;
-    }
+  .form-block__title {
+    flex-basis: 165px;
+    margin-top: 20px;
+  }
 
-    &__content {
-      flex-direction: row;
-      flex-wrap: wrap;
-      flex-grow: 1;
-    }
+  .form-block__content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
   }
 
   .form-field {
@@ -129,23 +129,23 @@
       flex-basis: 100%;
     }
 
-    &--input label {
-      margin-right: 20px;
-    }
-
     &--textarea {
       flex-basis: 100%;
     }
+  }
+
+  .form-field--input label {
+    margin-right: 20px;
   }
 
   .form-control {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
 
-    &__note {
-      font-size: 17px;
-    }
+  .form-control__note {
+    font-size: 17px;
   }
 }
 

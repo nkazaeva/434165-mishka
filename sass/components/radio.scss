@@ -1,40 +1,41 @@
 .form-field__radio {
   display: none;
+}
 
-  & ~ .form-field__label {
-    cursor: pointer;
-    vertical-align: middle;
-  }
+.form-field__radio ~ .form-field__label {
+  cursor: pointer;
+  vertical-align: middle;
+}
 
-  & ~ .form-field__label::before {
-    content: '';
-    display: inline-block;
-    cursor: pointer;
-    vertical-align: middle;
-    border-radius: 50px;
-    box-shadow: 0 0 0 2px $gray--darken;
-  }
+.form-field__radio ~ .form-field__label::before {
+  content: "";
+  display: inline-block;
+  flex-shrink: 0;
+  cursor: pointer;
+  vertical-align: middle;
+  border-radius: 50px;
+  box-shadow: 0 0 0 2px $gray--darken;
+}
 
-  & ~ .form-field__label:hover::before {
-    box-shadow: 0 0 0 2px $color-main;
-  }
+.form-field__radio ~ .form-field__label:hover::before {
+  box-shadow: 0 0 0 2px $color-main;
+}
 
-  & ~ .form-field__label:active::before {
-    box-shadow: 0 0 0 2px $gray--light;
-  }
+.form-field__radio ~ .form-field__label:active::before {
+  box-shadow: 0 0 0 2px $gray--light;
+}
 
-  &:checked + .form-field__label::before {
-    background: $color-main;
-    box-shadow: 0 0 0 2px $gray--darken;
-  }
+.form-field__radio:checked + .form-field__label::before {
+  background: $color-main;
+  box-shadow: 0 0 0 2px $gray--darken;
+}
 
-  &:checked + .form-field__label:hover::before {
-    box-shadow: 0 0 0 2px $color-main;
-  }
+.form-field__radio:checked + .form-field__label:hover::before {
+  box-shadow: 0 0 0 2px $color-main;
+}
 
-  &:checked + .form-field__label:active::before {
-    box-shadow: 0 0 0 2px $gray--light;
-  }
+.form-field__radio:checked + .form-field__label:active::before {
+  box-shadow: 0 0 0 2px $gray--light;
 }
 
 @media #{$mobile-widths-only} {

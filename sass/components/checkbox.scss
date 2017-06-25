@@ -1,44 +1,44 @@
 .form-field__checkbox {
   display: none;
-
-  & ~ .form-field__label {
-    cursor: pointer;
-    vertical-align: middle;
-  }
-
-  & ~ .form-field__label::before {
-    content: '';
-    display: inline-block;
-    cursor: pointer;
-    vertical-align: middle;
-    text-align: center;
-    color: #231f20;
-    box-shadow: 0 0 0 2px $gray--darken;
-    box-sizing: border-box;
-  }
-
-  & ~ .form-field__label:hover::before {
-    box-shadow: 0 0 0 2px $color-main;
-  }
-
-  & ~ .form-field__label:active::before {
-    box-shadow: 0 0 0 2px $gray--light;
-  }
-
-  &:checked + .form-field__label::before {
-    background: url('../img/icon-tick.svg') no-repeat 50% 50%;
-    box-shadow: 0 0 0 2px $gray--darken;
-  }
-
-  &:checked + .form-field__label:hover::before {
-    box-shadow: 0 0 0 2px $color-main;
-  }
-
-  &:checked + .form-field__label:active::before {
-    box-shadow: 0 0 0 2px $gray--light;
-  }
 }
 
+.form-field__checkbox ~ .form-field__label {
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.form-field__checkbox ~ .form-field__label::before {
+  content: "";
+  display: inline-block;
+  flex-shrink: 0;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  color: #231f20;
+  box-shadow: 0 0 0 2px $gray--darken;
+  box-sizing: border-box;
+}
+
+.form-field__checkbox ~ .form-field__label:hover::before {
+  box-shadow: 0 0 0 2px $color-main;
+}
+
+.form-field__checkbox ~ .form-field__label:active::before {
+  box-shadow: 0 0 0 2px $gray--light;
+}
+
+.form-field__checkbox:checked + .form-field__label::before {
+  background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+  box-shadow: 0 0 0 2px $gray--darken;
+}
+
+.form-field__checkbox:checked + .form-field__label:hover::before {
+  box-shadow: 0 0 0 2px $color-main;
+}
+
+.form-field__checkbox:checked + .form-field__label:active::before {
+  box-shadow: 0 0 0 2px $gray--light;
+}
 
 @media #{$mobile-widths-only} {
   .form-field__checkbox ~ .form-field__label::before {

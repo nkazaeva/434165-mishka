@@ -1,45 +1,45 @@
 .contacts {
   display: flex;
+}
 
-  &__title {
-    color: black;
-  }
+.contacts__title {
+  color: black;
+}
 
-  &__item--email {
-    border-bottom: 1px solid $color-main;
-  }
+.contacts__list {
+  display: flex;
+}
 
-  &__item--email:hover {
+.contacts__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contacts__item-title {
+  flex-basis: 80px;
+  flex-shrink: 0;
+}
+
+.contacts__item-value--email {
+  border-bottom: 1px solid $color-main;
+
+  &:hover {
     color: #46c1ae;
     border-bottom: 1px solid #46c1ae;
   }
 
-  &__item--email:active {
+  &:active {
     color: #d6f1ed;
     border-bottom: 1px solid #d6f1ed;
   }
+}
 
-  &__list {
-    display: flex;
-  }
+.contacts__map {
+  position: relative;
+  text-align: center;
 
-  &__item {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  &__item-title {
-    flex-basis: 80px;
-    flex-shrink: 0;
-  }
-
-  &__map {
-    position: relative;
-    text-align: center;
-  }
-
-  &__map::before {
+  &::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -56,29 +56,28 @@
   .contacts {
     flex-direction: column;
     margin: 40px 0;
+  }
+  .contacts__title {
+    font-size: 18px;
+  }
 
-    &__title {
-      font-size: 18px;
-    }
+  .contacts__list {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
 
-    &__list {
-      flex-direction: column;
-      margin-bottom: 40px;
-    }
+  .contacts__item {
+    line-height: 28px;
+  }
 
-    &__item {
-      line-height: 28px;
-    }
+  .contacts__map .container{
+    padding: 0;
+  }
 
-    &__map .container{
-      padding: 0;
-    }
-
-    &__title,
-    &__item,
-    &__map{
-      margin-bottom: 30px;
-    }
+  .contacts__title,
+  .contacts__item,
+  .contacts__map{
+    margin-bottom: 30px;
   }
 }
 
@@ -86,35 +85,35 @@
   .contacts {
     flex-direction: column;
     margin: 50px 0 60px 0;
+  }
 
-    &__title {
-      font-size: 43px;
-      height: 80px;
-      background: url('../img/icon-flag.svg') no-repeat 100% 50%;
-    }
+  .contacts__title {
+    font-size: 43px;
+    height: 80px;
+    background: url("../img/icon-flag.svg") no-repeat 100% 50%;
+  }
 
-    &__list {
-      flex-direction: row;
-      justify-content: space-between;
-    }
+  .contacts__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    &__item {
-      flex-basis: 40%;
-    }
+  .contacts__item {
+    flex-basis: 40%;
+  }
 
-    &__map .container{
-      padding: 0;
-    }
+  .contacts__map .container{
+    padding: 0;
+  }
 
-    &__write {
-      align-self: center;
-    }
+  .contacts__write {
+    align-self: center;
+  }
 
-    &__title,
-    &__item,
-    &__map{
-      margin-bottom: 40px;
-    }
+  .contacts__title,
+  .contacts__item,
+  .contacts__map {
+    margin-bottom: 40px;
   }
 }
 
@@ -125,40 +124,40 @@
     justify-content: space-between;
     max-width: 1050px;
     margin: 70px auto 60px auto;
+  }
 
-    &__info {
-      flex-basis: 350px;
-      box-sizing: border-box;
-    }
+  .contacts__info {
+    flex-basis: 350px;
+    box-sizing: border-box;
+  }
 
-    &__info .container {
-      padding: 0;
-    }
+  .contacts__info .container {
+    padding: 0;
+  }
 
-    &__title {
-      font-size: 53px;
-      margin-top: 60px;
-      padding-left: 175px;
-      background-position: 65px 50%;
-    }
+  .contacts__title {
+    font-size: 53px;
+    margin-top: 60px;
+    padding-left: 175px;
+    background-position: 65px 50%;
+  }
 
-    &__list {
-      flex-direction: column;
-      padding-left: 175px;
-    }
+  .contacts__list {
+    flex-direction: column;
+    padding-left: 175px;
+  }
 
-    &__map .container{
-      padding: 0;
-    }
+  .contacts__map .container{
+    padding: 0;
+  }
 
-    &__write {
-      align-self: flex-start;
-      margin-top: -100px;
-      padding-left: 175px;
-    }
+  .contacts__write {
+    align-self: flex-start;
+    margin-top: -100px;
+    padding-left: 175px;
+  }
 
-    &__write .container {
-      padding: 0;
-    }
+  .contacts__write .container {
+    padding: 0;
   }
 }

@@ -2,7 +2,7 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-style: normal;
   font-size: 15px;
   color: $gray--darken;
@@ -69,7 +69,7 @@ h3 {
   font-weight: 700;
 }
 
-svg path {
+svg path:not(.icon-play) {
   fill: inherit;
 }
 

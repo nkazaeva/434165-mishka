@@ -5,68 +5,68 @@
 .page-footer {
   display: flex;
   justify-content: space-between;
+}
 
-  &__logo use.logo-footer {
-    fill: #231f20;
-  }
+.page-footer__logo use.logo-footer {
+  fill: #231f20;
+}
 
-  &__logo:hover use.logo-footer {
-    fill: $color-main--dark;
-  }
+.page-footer__logo:hover use.logo-footer {
+  fill: $color-main--dark;
+}
 
-  &__logo:active use.logo-footer {
-    fill: $color-main--dark;
-    opacity: 0.3;
-  }
+.page-footer__logo:active use.logo-footer {
+  fill: $color-main--dark;
+  opacity: 0.3;
+}
 
-  &__copyright {
-    font-size: 19px;
-    font-weight: 700;
-  }
+.page-footer__copyright {
+  font-size: 19px;
+  font-weight: 700;
+}
 
-  &__copyright-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.page-footer__copyright-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  &__copyright-link use.logo-htmlacademy {
-    fill: #63d1bb;
-  }
+.page-footer__copyright-link use.logo-htmlacademy {
+  fill: #63d1bb;
+}
 
-  &__copyright-link:hover use.logo-htmlacademy {
-    fill: $color-main--dark;
-  }
+.page-footer__copyright-link:hover use.logo-htmlacademy {
+  fill: $color-main--dark;
+}
 
-  &__copyright-link:active use.logo-htmlacademy {
-    fill: $color-main--dark;
-    opacity: 0.3;
-  }
+.page-footer__copyright-link:active use.logo-htmlacademy {
+  fill: $color-main--dark;
+  opacity: 0.3;
+}
 
-  &__copyright-link svg {
-    margin-left: 30px;
-  }
+.page-footer__copyright-link svg {
+  margin-left: 30px;
 }
 
 @media #{$mobile-widths-only} {
   .page-footer {
     flex-direction: column;
     padding: 20px 0;
+  }
 
-    &__logo {
-      display: none;
-    }
+  .page-footer__logo {
+    display: none;
+  }
 
-    &__social {
-      flex-basis: 100%;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #e5e5e5;
-    }
+  .page-footer__social {
+    flex-basis: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+  }
 
-    &__copyright {
-      flex-basis: 100%;
-      padding-top: 20px;
-    }
+  .page-footer__copyright {
+    flex-basis: 100%;
+    padding-top: 20px;
   }
 }
 

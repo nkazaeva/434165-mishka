@@ -1,186 +1,180 @@
 .best-week-wrap {
   position: relative;
-
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    background-position: top left;
-    background-repeat: repeat-x;
-  }
 }
 
-.best-week {
-  &__title {
-    display: flex;
-  }
+.best-week__title {
+  display: flex;
+}
 
-  &__title-main {
-    color: black;
-  }
+.best-week__title-main {
+  color: black;
+}
 
-  &__title-sub {
-    font-size: 17px;
-    font-weight: 700;
-    color: $color-main;
-    text-transform: uppercase;
-  }
+.best-week__title-sub {
+  font-size: 17px;
+  font-weight: 700;
+  color: $color-main;
+  text-transform: uppercase;
 }
 
 .product {
   display: flex;
+}
 
-  &__description-features tr {
-    border-bottom: 1px solid $gray--lighten;
-  }
+.product__description-features tr {
+  border-bottom: 1px solid $gray--lighten;
+}
 
-  &__order-price {
-    font-weight: 700;
-    text-align: center;
-  }
+.product-order__price {
+  font-weight: 700;
+  text-align: center;
 }
 
 @media #{$mobile-widths-only} {
   .best-week {
     padding-bottom: 10px;
-
-    &-wrap {
-      margin-bottom: 20px;
-      border-image: url('/img/bg-zigzag-line.svg') 25 0 repeat;
-      border-bottom: 7px solid transparent;
-    }
-
-    &__title {
-      flex-direction: column;
-      margin-bottom: 30px;
-    }
-
-    &__title-main {
-      font-size: 25px;
-    }
   }
+
+  .best-week-wrap {
+    margin-bottom: 20px;
+    border-image: url("../img/bg-zigzag-line.svg") 25 0 repeat;
+    border-bottom: 7px solid transparent;
+  }
+
+  .best-week__title {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .best-week__title-main {
+    font-size: 25px;
+  }
+
   .product {
     flex-direction: column;
+  }
 
-    &__description-text,
-    &__description-features,
-    &__image,
-    &__order-button {
-      margin-bottom: 20px;
-    }
+  .product__description-text,
+  .product__description-features,
+  .product__image,
+  .product-order__button {
+    margin-bottom: 20px;
+  }
 
-    &__image {
-      text-align: center;
-    }
+  .product__image {
+    text-align: center;
+  }
 
-    &__order-price {
-      margin-bottom: 30px;
-      font-size: 17px;
-    }
+  .product-order__price {
+    margin-bottom: 30px;
+    font-size: 17px;
   }
 }
 
 @media #{$tablet-widths} {
+  .best-week-wrap {
+    margin-bottom: 40px;
+    border-image: url("../img/bg-zigzag-line.svg") 25 0 repeat;
+    border-bottom: 15px solid transparent;
+  }
+
   .best-week {
     padding-bottom: 10px;
+  }
 
-    &-wrap {
-      margin-bottom: 40px;
-      border-image: url('/img/bg-zigzag-line.svg') 25 0 repeat;
-      border-bottom: 15px solid transparent;
-    }
+  .best-week__title {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
 
-    &__title {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 50px;
-    }
+  .best-week__title-main {
+    font-size: 43px;
+  }
 
-    &__title-main {
-      font-size: 43px;
-    }
-
-    &__title-sub {
-      flex-basis: 100px;
-      text-align: center;
-    }
+  .best-week__title-sub {
+    flex-basis: 100px;
+    text-align: center;
   }
 
   .product {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+  }
 
-    &__description{
-      margin-right: 50px;
-    }
+  .product__description{
+    margin-right: 50px;
+  }
 
-    &__description,
-    &__description-text {
-      margin-bottom: 30px;
-    }
+  .product__description,
+  .product__description-text {
+    margin-bottom: 30px;
+  }
 
-    &__order {
-      margin: -130px 378px 45px 0;
-    }
+  .product__description-features {
+    margin-bottom: 100px;
+  }
 
-    &__order-price {
-      font-size: 20px;
-      margin-bottom: 40px;
-    }
+  .product-order {
+    margin: -130px 378px 45px 0;
+  }
+
+  .product-order__price {
+    font-size: 20px;
+    margin-bottom: 40px;
   }
 }
 
 @media #{$desktop-widths} {
-  .best-week {
-    &-wrap {
-      margin-bottom: 50px;
-      border-image: url('/img/bg-zigzag-line.svg') 25 0 repeat;
-      border-bottom: 20px solid transparent;
-    }
+  .best-week-wrap {
+    margin-bottom: 50px;
+    border-image: url("../img/bg-zigzag-line.svg") 25 0 repeat;
+    border-bottom: 20px solid transparent;
+  }
 
-    &__title {
-      flex-direction: row-reverse;
-      justify-content: flex-end;
-      margin: 120px 0 55px 0;
-    }
+  .best-week__title {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 120px 0 55px 0;
+  }
 
-    &__title-main {
-      font-size: 53px;
-      z-index: 5;
-    }
+  .best-week__title-main {
+    font-size: 53px;
+    z-index: 5;
+  }
 
-    &__title-sub {
-      flex-basis: 175px;
-      padding: 0 40px;
-      box-sizing: border-box;
-    }
+  .best-week__title-sub {
+    flex-basis: 175px;
+    padding: 0 40px;
+    box-sizing: border-box;
   }
 
   .product {
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
     margin: -175px 0 0 175px;
+  }
 
-    &__description,
-    &__description-text {
-      margin-bottom: 55px;
-    }
+  .product__description,
+  .product__description-text {
+    margin-bottom: 55px;
+  }
 
-    &__image {
-      height: 636px;
-    }
+  .product__description {
+    margin-top: 160px;
+  }
 
-    &__order {
-      margin: -115px 570px 60px 175px;
-    }
+  .product__image {
+    height: 636px;
+  }
 
-    &__order-price {
-      margin-bottom: 30px;
-    }
+  .product-order {
+    margin: -115px 570px 60px 175px;
+  }
+
+  .product-order__price {
+    margin-bottom: 30px;
   }
 }
